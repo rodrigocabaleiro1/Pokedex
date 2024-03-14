@@ -1,0 +1,346 @@
+@import url(fonts.css);
+
+*{
+	border: 0;
+	margin: 0;
+}
+
+nav{
+	display: flex;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.9);
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+}
+
+
+.border_nav{
+	box-shadow: 0px 0px 0 15px rgba(200, 0, 0, 1);
+	margin: auto;
+	background-color: #202020;
+	height: 100%;
+	width: 400px;
+}
+
+
+.header_nav{
+	height: 30px;
+}
+
+.body_nav{
+	margin: auto;
+	background-color: #474F51;
+	height: 350px;
+	width: 350px;
+}
+
+.pokeball_nav{
+	text-align: center;
+	position: relative;
+	height: 350px;
+	width: 350px;
+	border-radius: 100%;
+	background-color: #F13823;
+	border: solid 20px #202020;
+	top: -20px;
+	left: -20px;
+	transition: 1.5s;
+}
+.line_pokeball{
+	width: 350px;
+	height: 32px;
+	background-color: #202020;
+	position: relative;
+	top: 159px;	
+	box-shadow:  0px 0px 10px 0px rgba(20, 20, 20, 0.4);
+
+}
+
+.button_pokeball{
+	cursor: pointer;
+	box-sizing: content-box;
+	position: relative;
+	width: 70px;
+	height: 75px;
+	background-color: #DFE7E9;
+	
+	top: -37px;
+	border-radius: 100%;
+	border: solid 20px #202020;
+	box-shadow: inset 0px 0px 0px 5px rgba(20, 20, 20, 0.35), 0px 0px 10px 5px rgba(20, 20, 20, 0.4);
+	transition: 1.5s;
+}
+
+.button_pokeball:hover{
+	transition: 0.5s;
+	width: 88px;
+	height: 95px;
+
+}
+
+.pokeball_nav:hover{
+	cursor: pointer;
+	transform: rotate(30deg);
+	box-shadow: inset 0px 0px 50px 10px rgba(20, 20, 20, 0.4);
+	.button_pokeball{
+		box-shadow: inset 0px 0px 0px 10px rgba(255, 255, 255, 1), 0px 0px 10px 5px rgba(20, 20, 20, 0.4);
+		background-color: #aaa;
+
+	}
+}
+
+.footer_nav{
+	font-family: 'Bebas Neue', sans-serif;
+	display: flex;
+	position: relative;
+	width: 350px;
+	height: 120px;
+	background-color: #181818;
+	margin: auto;
+	top: 40px;
+	font-size: 25px;
+	color: #fff;
+}
+
+.arrow_left{
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-right: 12px solid #fff;
+}
+
+.arrow_right{
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 12px solid #fff;
+}
+
+.label_nav{
+	margin-left: 8px;
+	margin-right: 8px;
+
+}
+
+#regiones{
+	text-decoration: none;
+	font-family: 'Bebas Neue', sans-serif;
+	height: 35px;
+	font-size: 25px;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0);
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*#regiones:before{
+	background-color: rgba(0, 0, 0, 0);
+}
+*/
+#regiones option{
+	background-color: rgba(0, 0, 0, 1);
+}
+
+
+.switch_nav{
+	height: 35px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.switch_input{
+	display: none;
+}
+
+.switch_rail{
+	position: relative;
+	width: 95px;
+	height: 25px;
+	background-color: #C31F2A;
+	border-radius: 30px;
+	box-shadow: inset 0px 0px 10px 10px rgba(20, 20, 20, 0.3);
+
+}
+
+.switch_circle{
+	display: block;
+	width: 50px;
+	height: 23px;
+	background-color: #586FF9;
+	border-radius: 35px;
+	position: absolute;
+	left: 0;
+	transition: 0.4s;
+	box-shadow: inset 0px 10px 5px 0px rgba(20, 20, 20, 0.4);
+	transform: rotate(180deg);
+	border: solid 1px #eee;
+}
+
+.switch_input:checked ~ .switch_rail span{
+		left: 45px;
+	
+}
+
+.switch_nav:hover {
+	.switch_rail{
+		box-shadow: inset 0px 0px 10px 10px rgba(255, 255, 255, 0);
+
+	}
+
+}
+
+
+.elements_footer_nav {
+	top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	position: relative;
+	height: 50px;
+	align-items: center;
+}
+
+.number_pokemons{
+	height: 50px;
+	width: 350px;
+	font-size: 25px;
+	position: absolute;
+	top: 75px;
+	text-align: center;
+}
+
+
+
+
+@media (min-width: 600px) {
+
+	.border_nav{
+	width: 600px;
+	overflow: hidden;
+	}
+
+	.body_nav{
+		height: 550px;
+		width: 550px;
+	}
+
+	.pokeball_nav{
+		height: 550px;
+		width: 550px;
+	}
+
+	.line_pokeball{
+		width: 550px;
+		height: 44px;
+		top: 253px;	
+
+	}
+
+	.button_pokeball{
+		width: 100px;
+		height: 110px;
+		top: -55px;
+	}
+
+	.button_pokeball:hover{
+		width: 125px;
+		height: 135px;
+		top: -67px;
+
+	}
+
+	.footer_nav{
+		width: 550px;
+		height: 30%;
+		font-size: 35px;
+	}
+
+	.arrow_left{
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-right: 18px solid #fff;
+	}
+
+	.arrow_right{
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-left: 18px solid #fff;
+	}
+
+	.label_nav{
+		margin-left: 10px;
+		margin-right: 10px;
+
+	}
+
+	#regiones{
+		font-size: 35px;
+	}
+
+
+	.switch_rail{
+		position: relative;
+		width: 150px;
+		height: 35px;
+	}
+
+	.switch_circle{
+		width: 80px;
+		height: 33px;
+	}
+
+	.switch_input:checked ~ .switch_rail span{
+			left: 70px;
+		
+	}
+
+
+	.elements_footer_nav {
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		position: relative;
+		height: 50px;
+		align-items: center;
+	}
+
+	.number_pokemons{
+		height: 50px;
+		width: 550px;
+		font-size: 40px;
+		position: absolute;
+		top: 75px;
+		text-align: center;
+	}
+	}
+
+@media (min-width: 800px){
+	.info_nav{
+		position: absolute;
+		width: 110px;
+		height: 380px;
+		right: 20px;
+		bottom: 20px;
+	}
+
+	.github, .linkedin, .gmail{
+		position: relative;
+		width: 90px;
+		height: 90px;
+		background-color: #fff;
+		margin: auto;
+		margin-top: 30px;
+		border-radius: 100%;
+	}
+
+	.github:hover, .linkedin:hover, .gmail:hover{
+		width: 100px;
+		height: 100px;
+	}
+	}
